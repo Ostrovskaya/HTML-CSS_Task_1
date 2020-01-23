@@ -159,6 +159,17 @@ summary::-webkit-details-marker {
 .browse_menu {
   position: relative;
 }
+.browse_white_arrow {
+  top: 28px;
+  left: 67px;
+  position: absolute;
+  z-index: 3;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff;
+  border-image: initial;
+  border-bottom: 5px solid #ffffff;
+}
 .drop_title_section {
   display: block;
   width: 100%;
@@ -382,13 +393,13 @@ summary::-webkit-details-marker {
   box-shadow: none;
 }
 /*      Меню     */
-.drop_nav {
-  position: relative;
-}
 .menu {
   justify-content: center;
   display: flex;
   align-items: center;
+}
+.menu__list {
+  position: relative;
 }
 .menu__link {
   font-size: 14px;
@@ -412,27 +423,25 @@ summary::-webkit-details-marker {
   padding-bottom: 20px;
 }
 .drop_mega_menu {
-  width: 846px;
   background-color: #ffffff;
   border-radius: 5px;
-  padding: 21px 21px 19px 25px;
-  height: 310px;
+  padding: 16px 21px;
   position: absolute;
-  left: -73px;
   top: 50px;
   display: none;
-  flex-direction: column;
-  flex-wrap: wrap;
   z-index: 1;
 }
-.drop_nav:hover .drop_mega_menu {
+.menu__list:hover .drop_mega_menu {
   display: flex;
 }
 .section_mega_menu {
   width: 234px;
+  margin-right: 45px;
+}
+.section_mega_menu:last-of-type {
+  margin-right: 0;
 }
 .img_mega_menu {
-  background-image: url(img/super-sale.png);
   position: absolute;
   right: 21px;
   bottom: 19px;
@@ -644,11 +653,10 @@ summary::-webkit-details-marker {
 }
 /*     Блок особенностей    */
 .feature_block {
-  width: 1140px;
   margin-bottom: 97px;
 }
 .offer_feature {
-  width: 100%;
+  width: 1140px;
   height: 529px;
   background-color: #222224;
   justify-content: space-between;
