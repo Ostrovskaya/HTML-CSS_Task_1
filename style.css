@@ -380,14 +380,17 @@ summary::-webkit-details-marker {
   box-shadow: none;
 }
 /*      Меню     */
+
 .nav {
   justify-content: center;
   display: flex;
   align-items: center;
 }
+
 .menu {
   display: flex;
 }
+
 .menu__list {
   position: relative;
 }
