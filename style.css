@@ -388,7 +388,9 @@ summary::-webkit-details-marker {
 }
 
 .menu {
+  justify-content: center;
   display: flex;
+  align-items: center;
 }
 
 .menu__list {
