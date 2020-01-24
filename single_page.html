@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Single Page</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <header class="header center">
+        <div class="header__left">
+            <a href="index.html" class="logo"><img class="logo__img" src="img/18.png" alt="logo">
+                <div>BRAN<span class="pink_bold">D</span></div>
+            </a>
+            <form class="header__form" action="#">
+                <details class="browse_menu">
+                    <summary class="header__browse"><span class="browse">Browse</span></summary>
+                    <div class="browse_white_arrow"></div>
+                    <ul class="drop_down_menu">
+                        <li><a href="#" class="drop_title_section">Women</a>
+                            <ul>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Dresses</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Tops</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Sweaters/Knits</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Jackets/Coats</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Blazers</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Denim</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Leggings/Pants
+                                    </a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Skirts/Shorts</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="drop_title_section">Men</a>
+                            <ul>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Tees/Tank tops</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Shirts/Polos</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Sweaters</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Sweatshirts/Hoodies</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Blazers</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Jackets/vests</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </details>
+                <input class="input_form" placeholder="Search for Item..." type="text">
+                <button class="search_button"><img src="img/search.png" alt="search"></button>
+            </form>
+        </div>
+        <div class="header__right">
+            <div class="drop_cart">
+                <a class="link_cart" title="Go to cart" href="#"><img class="header__cart" src="img/cart.png" alt="cart">
+                    <div class="count_items_cart">2</div>
+                </a>
+                <div class="drop_down_cart">
+                    <a href="#">
+                        <div class="product_in_bascket">
+                            <img src="img/cart-1.png" alt="" class="product_img">
+                            <div class="priduct_cart_info">
+                                <p class="name_product_cart">Rebox Zane</p>
+                                <p class="rating_product_cart"><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_half_star"></span></p>
+                                <p class="price_product_cart">1 x $250</p>
+                            </div>
+                            <div class="close_buttom"><i class="fa fa-times" aria-hidden="true"></i></div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="product_in_bascket">
+                            <img src="img/cart-2.png" alt="" class="product_img">
+                            <div class="priduct_cart_info">
+                                <p class="name_product_cart">Rebox Zane</p>
+                                <p class="rating_product_cart"><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_half_star"></span></p>
+                                <p class="price_product_cart">1 x $250</p>
+                            </div>
+                            <div class="close_buttom"><i class="fa fa-times" aria-hidden="true"></i></div>
+                        </div>
+                    </a>
+                    <div class="total_price">
+                        <p>TOTAL</p>
+                        <p>$500.00</p>
+                    </div>
+                    <div class="checkout_button"><a href="checkout.html">Checkout</a></div>
+                    <div class="go_to_cart_button"><a href="">Go to cart</a></div>
+                </div>
+            </div>
+            <div style="width: 130px; height:38px; " class="button"><a class="button_text" href="#">My Account</a></div>
+        </div>
+    </header>
+    <nav class="nav center">
+        <ul class="menu">
+            <li class="menu__list"><a href="index.html" class="menu__link">Home </a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Man </a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Women </a>
+                <div class="drop_mega_menu">
+                    <div class="section_mega_menu">
+                        <h3 class="drop_title_section">Women</h3>
+                        <ul>
+                            <li class="drop_section_list"><a href="#" class="drop_section_link">Dresses</a></li>
+                            <li class="drop_section_list"><a href="#" class="drop_section_link">Tops</a></li>
+                            <li class="drop_section_list"><a href="#" class="drop_section_link">Sweaters/Knits</a></li>
+                            <li class="drop_section_list"><a href="#" class="drop_section_link">Jackets/Coats</a></li>
+                            <li class="drop_section_list"><a href="#" class="drop_section_link">Blazers</a></li>
+                            <li class="drop_section_list"><a href="#" class="drop_section_link">Denim</a></li>
+                            <li class="drop_section_list"><a href="#" class="drop_section_link">Leggings/Pants</a></li>
+                            <li class="drop_section_list"><a href="#" class="drop_section_link">Skirts/Shorts</a></li>
+                            <li class="drop_section_list"><a href="#" class="drop_section_link">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="section_mega_menu ">
+                        <h3 class="drop_title_section">Women</h3>
+                        <ul>
+                            <li class="drop_section_list"><a href="#" class="drop_section_link">Dresses</a></li>
+                            <li class="drop_section_list"><a href="#" class="drop_section_link">Tops</a></li>
+                            <li class="drop_section_list"><a href="#" class="drop_section_link">Sweaters/Knits</a></li>
+                            <li class="drop_section_list"><a href="#" class="drop_section_link">Jackets/Coats</a></li>
+                        </ul>
+                        <h3 class="drop_title_section">Women</h3>
+                        <ul>
+                            <li class="drop_section_list"><a href="#" class="drop_section_link">Dresses</a></li>
+                            <li class="drop_section_list"><a href="#" class="drop_section_link">Tops</a></li>
+                            <li class="drop_section_list"><a href="#" class="drop_section_link">Sweaters/Knits</a></li>
+                        </ul>
+                    </div>
+                    <div class="section_mega_menu">
+                        <h3 class="drop_title_section">Women</h3>
+                        <ul>
+                            <li class="drop_section_list"><a href="#" class="drop_section_link">Dresses</a></li>
+                            <li class="drop_section_list"><a href="#" class="drop_section_link">Tops</a></li>
+                            <li class="drop_section_list"><a href="#" class="drop_section_link">Sweaters/Knits</a></li>
+                            <li class="drop_section_list"><a href="#" class="drop_section_link">Jackets/Coats</a></li>
+                        </ul>
+                    </div>
+                    <img class="img_mega_menu" src="img/super-sale.png" alt="">
+                </div>
+            </li>
+            <li class="menu__list"><a href="#" class="menu__link">Kids </a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Accessoriese </a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Featured </a></li>
+            <li class="menu__list"><a href="#" class="menu__link">Hot Deals</a></li>
+        </ul>
+    </nav>
+    <section class="path_catalog center">
+        <p class="title_path_catalog pink_bold">New Arrivals</p>
+        <nav class="nav_catalog"><a href="index.html">Home</a> /<a href="#"> Men</a> / <a class="active_section_menu" href="#">New Arrivals</a></nav>
+    </section>
+    <section class="main_single_page">
+        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="10000">
+                    <img src="img/single.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <img src="img/single.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/single.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                <span class="carousel-arrow" aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                <span class=""></span>
+                <span class="carousel-arrow" aria-hidden="true"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="product_description_block center">
+            <div class="product_description">
+                <p class="title_product_collection">WOMEN COLLECTION</p>
+                <div class="indicator_slider">
+                    <div class="indicator"></div>
+                    <div class="indicator active_indicator"></div>
+                    <div class="indicator"></div>
+                </div>
+                <p class="title_product_description">Moschino Cheap And Chic</p>
+                <p class="raiting_product"><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span></p>
+                <p class="text_product_description">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+                <div class="parametrs_product">
+                    <span class="name_parametrs_product">MATERIAL:<span class="value_parametrs_product"> COTTON</span></span>
+                    <span class="name_parametrs_product">DESIGNER:<span class="value_parametrs_product"> BINBURHAN</span></span>
+                </div>
+                <p class="price_product_description">$561</p>
+                <hr class="product_description_hr">
+                <div class="choose_parametrs">
+                    <div class="choose_block">
+                        <p for="color" class="choose_block_title">CHOOSE COLOR</p>
+                        <input id="color" class="choose_input choose_color" type="color" label="red" value="#f16d7f" list="color_list">
+                        <datalist id="color_list">
+                            <option value="#f16d7f" label="red">
+                            <option value="#009900" label="green">
+                            <option value="#4758a5" label="blue">
+                        </datalist>
+                    </div>
+                    <div class="choose_block">
+                        <p for="size" class="choose_block_title">CHOOSE SIZE</p>
+                        <select class="choose_input" id="size">
+                            <option value="XXL">XXL</option>
+                            <option value="XL">XL</option>
+                            <option value="L">L</option>
+                            <option value="M">M</option>
+                            <option value="S">S</option>
+                            <option value="XS">XS</option>
+                        </select>
+                    </div>
+                    <div class="choose_block">
+                        <p for="quantity" class="choose_block_title">QUANTITY</p>
+                        <input type="number" id="quantity" class="choose_input" value="2">
+                    </div>
+                </div>
+                <div class="button_to_cart">
+                    <img src="img/pink_cart.png" alt="cart">
+                    <span class="add_to_cart">Add to Cart</span>
+                </div>
+                
+            </div>
+        </div>
+        <p class="like_also">you may like also</p>
+        <div class="layout_items center">
+            <div class="product">
+                <a class="product_img" href="#"><img src="img/blaze.png" alt="img-1" class="item_img"></a>
+                <div class="catalog-item">
+                    <a href="#">
+                        <p class="item_name">BLAZE LEGGINGS</p>
+                    </a>
+                    <p class = "price_raiting"><span class="item-price pink_bold">$52.00</span>  <span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span></span></p>
+                </div>
+                <div class="back-button">
+                    <img class="back-img" src="img/white-cart.png" alt="Cart">
+                    <p class="back-text">Add to Cart</p>
+                </div>
+            </div>
+            <div class="product">
+                <a  class="product_img" href="#"><img src="img/alexa.png" alt="img-2" class="item_img"></a>
+                <div class="catalog-item">
+                    <a href="#">
+                        <p class="item_name">ALEXA SWEATER</p>
+                    </a>
+                    <p class = "price_raiting"><span class="item-price pink_bold">$52.00</span>  <span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span></span></p>
+                </div>
+                <div class="back-button">
+                    <img class="back-img" src="img/white-cart.png" alt="Cart">
+                    <p class="back-text">Add to Cart</p>
+                </div>
+            </div>
+            <div class="product">
+                <a  class="product_img" href="#"><img src="img/agnes.png" alt="img-3" class="item_img"></a>
+                <div class="catalog-item">
+                    <a href="#">
+                        <p class="item_name">AGNES TOP</p>
+                    </a>
+                    <p class = "price_raiting"><span class="item-price pink_bold">$52.00</span>  <span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span></span></p>
+                </div>
+                <div class="back-button">
+                    <img class="back-img" src="img/white-cart.png" alt="Cart">
+                    <p class="back-text">Add to Cart</p>
+                </div>
+            </div>
+            <div class="product">
+                <a  class="product_img" href="#"><img src="img/sylva.png" alt="img-4" class="item_img"></a>
+                <div class="catalog-item">
+                    <a href="#">
+                        <p class="item_name">SYLVA SWEATER</p>
+                    </a>
+                    <p class = "price_raiting"><span class="item-price pink_bold">$52.00</span>  <span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span></span></p>
+                </div>
+                <div class="back-button">
+                    <img class="back-img" src="img/white-cart.png" alt="Cart">
+                    <p class="back-text">Add to Cart</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bottom_block center">
+        <div class="bottom_block_content">
+            <article class="reviews_block">
+                <img src="img/avatar.png" alt="avatar" class="avatar_review">
+                <div class="review_content">
+                    <p class="review_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                    <p class="review_name pink_bold">Bin Burhan</p>
+                    <p class="review_adress">Dhaka, Bd</p>
+                    <div class="review_slider">
+                        <div class="line_review_slider"></div>
+                        <div class="line_review_slider  active_line_review"></div>
+                        <div class="line_review_slider"></div>
+                    </div>
+                </div>
+            </article>
+            <form class="subscribe_block">
+                <p class="subscribe_title">Subscribe</p>
+                <div class="subscribe_text">FOR OUR NEWLETTER AND PROMOTION</div>
+                <input class="input_email" placeholder="Enter Your Email" type="email" required><input type="submit" class="subscribe_button" value="Subscribe">
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <section class="footer_top center">
+            <div class="footer_left">
+                <a href="index.html" class="logo"><img class="logo__img" src="img/18.png" alt="logo">
+                    <div>BRAN<span class="pink_bold">D</span></div>
+                </a>
+                <div class="footer_left_content">
+                    <p class="footer_left_text">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
+                    <p class="footer_left_text">Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+                </div>
+            </div>
+            <div class="about_company_content">
+                <p class="footer_content_title pink_bold ">COMPANY</p>
+                <ul>
+                    <li class="footer_content_list"><a href="#" class="footer_content_link">Home</a></li>
+                    <li class="footer_content_list"><a href="#" class="footer_content_link">Shop</a></li>
+                    <li class="footer_content_list"><a href="#" class="footer_content_link">About</a></li>
+                    <li class="footer_content_list"><a href="#" class="footer_content_link">How It Works</a></li>
+                    <li class="footer_content_list"><a href="#" class="footer_content_link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer_information_content">
+                <p class="footer_content_title pink_bold ">INFORMATION</p>
+                <ul>
+                    <li class="footer_content_list"><a href="#" class="footer_content_link">Tearms &amp; Condition</a></li>
+                    <li class="footer_content_list"><a href="#" class="footer_content_link">Privacy Policy</a></li>
+                    <li class="footer_content_list"><a href="#" class="footer_content_link">How to Buy</a></li>
+                    <li class="footer_content_list"><a href="#" class="footer_content_link">How to Sell</a></li>
+                    <li class="footer_content_list"><a href="#" class="footer_content_link">Promotion</a></li>
+                </ul>
+            </div>
+            <div class="shop_category_content">
+                <p class="footer_content_title pink_bold ">SHOP CATEGORY</p>
+                <ul>
+                    <li class="footer_content_list"><a href="#" class="footer_content_link">Men</a></li>
+                    <li class="footer_content_list"><a href="#" class="footer_content_link">Women</a></li>
+                    <li class="footer_content_list"><a href="#" class="footer_content_link">Child</a></li>
+                    <li class="footer_content_list"><a href="#" class="footer_content_link">Apparel</a></li>
+                    <li class="footer_content_list"><a href="#" class="footer_content_link">Brows All</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer_bottom  center">
+            <span class="copyright">© 2017 Brand All Rights Reserved.</span>
+            <div class="social_networks_block">
+                <div class="social_network"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                <div class="social_network"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                <div class="social_network"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                <div class="social_network"><i class="fa fa-pinterest-p" aria-hidden="true"></i></div>
+                <div class="social_network"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
+            </div>
+        </section>
+    </footer>
+</body></html>
