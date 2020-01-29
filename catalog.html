@@ -15,48 +15,47 @@
             var range = document.getElementById(id_range).value;
             document.getElementById(id_text).innerHTML = range;
         }
-       
+
         var max_page = 20;
-        
-        function change_color_plus() {         
+
+        function change_color_plus() {
             var pagination_link = document.getElementsByClassName("pagination_link");
-            if (pagination_link[pagination_link.length - 1].text == (max_page-2))
-                return;     
-            for (var i = 0; i < pagination_link.length; i++){
+            if (pagination_link[pagination_link.length - 1].text == (max_page - 2))
+                return;
+            for (var i = 0; i < pagination_link.length; i++) {
                 pagination_link[i].innerHTML++;
             }
-            if (pagination_link[pagination_link.length - 1].text == (max_page-2)){
-                document.getElementById("pagination_delimiter").innerHTML = (max_page-1); 
+            if (pagination_link[pagination_link.length - 1].text == (max_page - 2)) {
+                document.getElementById("pagination_delimiter").innerHTML = (max_page - 1);
                 document.getElementById("right_pagination").classList.remove("pagination_arrow_active");
                 document.getElementById("pagination_delimiter").classList.add("pagination_link_end");
             }
-            if (pagination_link[0].text == "2"){
+            if (pagination_link[0].text == "2") {
                 pagination_link[0].classList.remove("pagination_link_active");
                 document.getElementById("left_pagination").classList.add("pagination_arrow_active");
             }
         }
-        
+
         function change_color_minus() {
-            var pagination_link = document.getElementsByClassName("pagination_link");      
+            var pagination_link = document.getElementsByClassName("pagination_link");
             if (pagination_link[0].text == "1")
                 return;
-            
-            if (pagination_link[pagination_link.length - 1].text == (max_page-2)){
-                document.getElementById("pagination_delimiter").innerHTML = "....."; 
+
+            if (pagination_link[pagination_link.length - 1].text == (max_page - 2)) {
+                document.getElementById("pagination_delimiter").innerHTML = ".....";
                 document.getElementById("right_pagination").classList.add("pagination_arrow_active");
                 document.getElementById("pagination_delimiter").classList.remove("pagination_link_end");
-            } 
-            
-            for (var i = 0; i < pagination_link.length; i++){
+            }
+
+            for (var i = 0; i < pagination_link.length; i++) {
                 pagination_link[i].innerHTML--;
             }
-            
-            if(pagination_link[0].text == "1"){
+
+            if (pagination_link[0].text == "1") {
                 document.getElementById("left_pagination").classList.remove("pagination_arrow_active");
                 pagination_link[0].classList.add("pagination_link_active");
-            }   
+            }
         }
-        
     </script>
 </head>
 
@@ -72,29 +71,29 @@
                     <div class="browse_white_arrow"></div>
                     <ul class="drop_down_menu">
                         <li><a href="#" class="drop_title_section">Women</a>
-                        <ul>
-                            <li class="drop_section_list"><a href="" class="drop_section_link">Dresses</a></li>
-                            <li class="drop_section_list"><a href="" class="drop_section_link">Tops</a></li>
-                            <li class="drop_section_list"><a href="" class="drop_section_link">Sweaters/Knits</a></li>
-                            <li class="drop_section_list"><a href="" class="drop_section_link">Jackets/Coats</a></li>
-                            <li class="drop_section_list"><a href="" class="drop_section_link">Blazers</a></li>
-                            <li class="drop_section_list"><a href="" class="drop_section_link">Denim</a></li>
-                            <li class="drop_section_list"><a href="" class="drop_section_link">Leggings/Pants
-                                </a></li>
-                            <li class="drop_section_list"><a href="" class="drop_section_link">Skirts/Shorts</a></li>
-                            <li class="drop_section_list"><a href="" class="drop_section_link">Accessories</a></li>
-                        </ul>
+                            <ul>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Dresses</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Tops</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Sweaters/Knits</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Jackets/Coats</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Blazers</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Denim</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Leggings/Pants
+                                    </a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Skirts/Shorts</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Accessories</a></li>
+                            </ul>
                         </li>
                         <li>
-                        <a href="#" class="drop_title_section">Men</a>
-                        <ul>
-                            <li class="drop_section_list"><a href="" class="drop_section_link">Tees/Tank tops</a></li>
-                            <li class="drop_section_list"><a href="" class="drop_section_link">Shirts/Polos</a></li>
-                            <li class="drop_section_list"><a href="" class="drop_section_link">Sweaters</a></li>
-                            <li class="drop_section_list"><a href="" class="drop_section_link">Sweatshirts/Hoodies</a></li>
-                            <li class="drop_section_list"><a href="" class="drop_section_link">Blazers</a></li>
-                            <li class="drop_section_list"><a href="" class="drop_section_link">Jackets/vests</a></li>
-                        </ul>
+                            <a href="#" class="drop_title_section">Men</a>
+                            <ul>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Tees/Tank tops</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Shirts/Polos</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Sweaters</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Sweatshirts/Hoodies</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Blazers</a></li>
+                                <li class="drop_section_list"><a href="" class="drop_section_link">Jackets/vests</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </details>
@@ -104,26 +103,27 @@
         </div>
         <div class="header__right">
             <div class="drop_cart">
-                <a class = "link_cart" title="Go to cart" href="#"><img class="header__cart" src="img/cart.png" alt="cart">
-                <div class="count_items_cart">2</div></a>
+                <a class="link_cart" title="Go to cart" href="#"><img class="header__cart" src="img/cart.png" alt="cart">
+                    <div class="count_items_cart">2</div>
+                </a>
                 <div class="drop_down_cart">
-                    <a href="#">
+                    <a href="single_page.html">
                         <div class="product_in_bascket">
                             <img src="img/cart-1.png" alt="" class="product_img">
                             <div class="priduct_cart_info">
                                 <p class="name_product_cart">Rebox Zane</p>
-                                <p class="rating_product_cart"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                                <p class="rating_product_cart"><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_half_star"></span></p>
                                 <p class="price_product_cart">1 x $250</p>
                             </div>
                             <div class="close_buttom"><i class="fa fa-times" aria-hidden="true"></i></div>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="single_page.html">
                         <div class="product_in_bascket">
                             <img src="img/cart-2.png" alt="" class="product_img">
                             <div class="priduct_cart_info">
                                 <p class="name_product_cart">Rebox Zane</p>
-                                <p class="rating_product_cart"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                                <p class="rating_product_cart"><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_half_star"></span></p>
                                 <p class="price_product_cart">1 x $250</p>
                             </div>
                             <div class="close_buttom"><i class="fa fa-times" aria-hidden="true"></i></div>
@@ -183,8 +183,8 @@
                             <li class="drop_section_list"><a href="#" class="drop_section_link">Sweaters/Knits</a></li>
                             <li class="drop_section_list"><a href="#" class="drop_section_link">Jackets/Coats</a></li>
                         </ul>
-                    </div>                
-                    <img class="img_mega_menu" src="img/super-sale.png" alt=""> 
+                    </div>
+                    <img class="img_mega_menu" src="img/super-sale.png" alt="">
                 </div>
             </li>
             <li class="menu__list"><a href="#" class="menu__link">Kids </a></li>
@@ -264,7 +264,7 @@
             </section>
             <section class="form_sort">
                 <div class="block_sort_by">
-                    <label style="width: 66px;" for="sort" class="label_sort_by">Sort By</label>
+                   <div  style="width: 66px;" class="sort_by"><label for="sort" class="label_sort_by">Sort By</label></div>
                     <select id="sort" style="width: 66px;" class="select_sort_by">
                         <option value="Name">Name</option>
                         <option value="Price">Price</option>
@@ -272,7 +272,7 @@
                     </select>
                 </div>
                 <div class="block_sort_by">
-                    <label style="width: 55px;" for="show" class="label_sort_by">Show</label>
+                    <div  style="width: 55px;" class="sort_by"><label for="show" class="label_sort_by">Show</label></div>
                     <select id="show" style="width: 63px;" class="select_sort_by">
                         <option value="9">9</option>
                         <option value="12">12</option>
@@ -287,132 +287,212 @@
                         <a href="#">
                             <p class="item_name">Mango People T-shirt</p>
                         </a>
-                        <p class="item-price pink_bold">$52.00</p>
+                        <p class="price_raiting"><span class="item-price pink_bold">$52.00</span> <span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span></span></p>
                     </div>
                     <div class="back-button">
                         <img class="back-img" src="img/white-cart.png" alt="Cart">
                         <p class="back-text">Add to Cart</p>
+                    </div>
+                    <div class="repeat_like">
+                        <div class="back_repeat_like">
+                            <img class="" src="img/repeat.png" alt="repeat">
+                        </div>
+                        <div class="back_repeat_like">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <a href="single_page.html"><img src="img/men-2.png" alt="img-2" class="item_img"></a>
+                    <div class="catalog-item">
+                        <a href="single_page.html">
+                            <p class="item_name">Mango People T-shirt</p>
+                        </a>
+                        <p class="price_raiting"><span class="item-price pink_bold">$52.00</span> <span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span></span></p>
+                    </div>
+                    <div class="back-button">
+                        <img class="back-img" src="img/white-cart.png" alt="Cart">
+                        <p class="back-text">Add to Cart</p>
+                    </div>
+                    <div class="repeat_like">
+                        <div class="back_repeat_like">
+                            <img class="" src="img/repeat.png" alt="repeat">
+                        </div>
+                        <div class="back_repeat_like">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <a href="single_page.html"><img src="img/img-3.png" alt="img-3" class="item_img"></a>
+                    <div class="catalog-item">
+                        <a href="single_page.html">
+                            <p class="item_name">Mango People T-shirt</p>
+                        </a>
+                        <p class="price_raiting"><span class="item-price pink_bold">$52.00</span> <span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span></span></p>
+                    </div>
+                    <div class="back-button">
+                        <img class="back-img" src="img/white-cart.png" alt="Cart">
+                        <p class="back-text">Add to Cart</p>
+                    </div>
+                    <div class="repeat_like">
+                        <div class="back_repeat_like">
+                            <img class="" src="img/repeat.png" alt="repeat">
+                        </div>
+                        <div class="back_repeat_like">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="product">
-                    <a href="#"><img src="img/men-2.png" alt="img-2" class="item_img"></a>
+                    <a href="single_page.html"><img src="img/men-4.png" alt="img-4" class="item_img"></a>
                     <div class="catalog-item">
-                        <a href="#">
+                        <a href="single_page.html">
                             <p class="item_name">Mango People T-shirt</p>
                         </a>
-                        <p class="item-price pink_bold">$52.00</p>
+                        <p class="price_raiting"><span class="item-price pink_bold">$52.00</span> <span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span></span></p>
                     </div>
                     <div class="back-button">
                         <img class="back-img" src="img/white-cart.png" alt="Cart">
                         <p class="back-text">Add to Cart</p>
+                    </div>
+                    <div class="repeat_like">
+                        <div class="back_repeat_like">
+                            <img class="" src="img/repeat.png" alt="repeat">
+                        </div>
+                        <div class="back_repeat_like">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="product">
-                    <a href="#"><img src="img/img-3.png" alt="img-3" class="item_img"></a>
+                    <a href="single_page.html"><img src="img/img-8.png" alt="img-5" class="item_img"></a>
                     <div class="catalog-item">
-                        <a href="#">
+                        <a href="single_page.html">
                             <p class="item_name">Mango People T-shirt</p>
                         </a>
-                        <p class="item-price pink_bold">$52.00</p>
+                        <p class="price_raiting"><span class="item-price pink_bold">$52.00</span> <span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span></span></p>
                     </div>
                     <div class="back-button">
                         <img class="back-img" src="img/white-cart.png" alt="Cart">
                         <p class="back-text">Add to Cart</p>
+                    </div>
+                    <div class="repeat_like">
+                        <div class="back_repeat_like">
+                            <img class="" src="img/repeat.png" alt="repeat">
+                        </div>
+                        <div class="back_repeat_like">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="product">
-                    <a href="#"><img src="img/men-4.png" alt="img-4" class="item_img"></a>
+                    <a href="single_page.html"><img src="img/men-6.png" alt="img-6" class="item_img"></a>
                     <div class="catalog-item">
-                        <a href="#">
+                        <a href="single_page.html">
                             <p class="item_name">Mango People T-shirt</p>
                         </a>
-                        <p class="item-price pink_bold">$52.00</p>
+                        <p class="price_raiting"><span class="item-price pink_bold">$52.00</span> <span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span></span></p>
                     </div>
                     <div class="back-button">
                         <img class="back-img" src="img/white-cart.png" alt="Cart">
                         <p class="back-text">Add to Cart</p>
+                    </div>
+                    <div class="repeat_like">
+                        <div class="back_repeat_like">
+                            <img class="" src="img/repeat.png" alt="repeat">
+                        </div>
+                        <div class="back_repeat_like">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="product">
-                    <a href="#"><img src="img/img-8.png" alt="img-5" class="item_img"></a>
+                    <a href="single_page.html"><img src="img/img-6.png" alt="img-7" class="item_img"></a>
                     <div class="catalog-item">
-                        <a href="#">
+                        <a href="single_page.html">
                             <p class="item_name">Mango People T-shirt</p>
                         </a>
-                        <p class="item-price pink_bold">$52.00</p>
+                        <p class="price_raiting"><span class="item-price pink_bold">$52.00</span> <span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span></span></p>
                     </div>
                     <div class="back-button">
                         <img class="back-img" src="img/white-cart.png" alt="Cart">
                         <p class="back-text">Add to Cart</p>
                     </div>
+                    <div class="repeat_like">
+                        <div class="back_repeat_like">
+                            <img class="" src="img/repeat.png" alt="repeat">
+                        </div>
+                        <div class="back_repeat_like">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="product">
-                    <a href="#"><img src="img/men-6.png" alt="img-6" class="item_img"></a>
+                    <a href="single_page.html"><img src="img/men-8.png" alt="img-8" class="item_img"></a>
                     <div class="catalog-item">
-                        <a href="#">
+                        <a href="single_page.html">
                             <p class="item_name">Mango People T-shirt</p>
                         </a>
-                        <p class="item-price pink_bold">$52.00</p>
+                        <p class="price_raiting"><span class="item-price pink_bold">$52.00</span> <span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span></span></p>
                     </div>
                     <div class="back-button">
                         <img class="back-img" src="img/white-cart.png" alt="Cart">
                         <p class="back-text">Add to Cart</p>
                     </div>
+                    <div class="repeat_like">
+                        <div class="back_repeat_like">
+                            <img class="" src="img/repeat.png" alt="repeat">
+                        </div>
+                        <div class="back_repeat_like">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="product">
-                    <a href="#"><img src="img/img-6.png" alt="img-7" class="item_img"></a>
+                    <a href="single_page.html"><img src="img/men-9.png" alt="img-9" class="item_img"></a>
                     <div class="catalog-item">
-                        <a href="#">
+                        <a href="single_page.html">
                             <p class="item_name">Mango People T-shirt</p>
                         </a>
-                        <p class="item-price pink_bold">$52.00</p>
+                        <p class="price_raiting"><span class="item-price pink_bold">$52.00</span> <span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span><span class="rating_star"></span></span></p>
                     </div>
                     <div class="back-button">
                         <img class="back-img" src="img/white-cart.png" alt="Cart">
                         <p class="back-text">Add to Cart</p>
                     </div>
-                </div>
-                <div class="product">
-                    <a href="#"><img src="img/men-8.png" alt="img-8" class="item_img"></a>
-                    <div class="catalog-item">
-                        <a href="#">
-                            <p class="item_name">Mango People T-shirt</p>
-                        </a>
-                        <p class="item-price pink_bold">$52.00</p>
+                    <div class="repeat_like">
+                        <div class="back_repeat_like">
+                            <img class="" src="img/repeat.png" alt="repeat">
+                        </div>
+                        <div class="back_repeat_like">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
                     </div>
-                    <div class="back-button">
-                        <img class="back-img" src="img/white-cart.png" alt="Cart">
-                        <p class="back-text">Add to Cart</p>
-                    </div>
-                </div>
-                <div class="product">
-                    <a href="#"><img src="img/men-9.png" alt="img-9" class="item_img"></a>
-                    <div class="catalog-item">
-                        <a href="#">
-                            <p class="item_name">Mango People T-shirt</p>
-                        </a>
-                        <p class="item-price pink_bold">$52.00</p>
-                    </div>
-                    <div class="back-button">
-                        <img class="back-img" src="img/white-cart.png" alt="Cart">
-                        <p class="back-text">Add to Cart</p>
-                    </div>
+
                 </div>
             </div>
-            <div class="pagination_nav">
-                <div  onclick="change_color_minus();" id="left_pagination" class="pagination_nav_arrow"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+            <div class="pagination_block">
+                <div class="pagination_nav">
+                <div onclick="change_color_minus();" id="left_pagination" class="pagination_nav_arrow"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
                 <ul class="left_pagination_nav">
-                    <li class="pagination_list"><a href="#" class="pagination_link pagination_link_active" >1</a></li>
+                    <li class="pagination_list"><a href="#" class="pagination_link pagination_link_active">1</a></li>
                     <li class="pagination_list"><a href="#" class="pagination_link">2</a></li>
                     <li class="pagination_list"><a href="#" class="pagination_link">3</a></li>
                     <li class="pagination_list"><a href="#" class="pagination_link">4</a></li>
                     <li class="pagination_list"><a href="#" class="pagination_link">5</a></li>
                     <li class="pagination_list"><a href="#" class="pagination_link">6</a></li>
                 </ul>
-                <div class="pagination_list"><span id = "pagination_delimiter" class="pagination_delimiter">.....</span></div>
+                <div class="pagination_list"><span id="pagination_delimiter" class="pagination_delimiter">.....</span></div>
                 <div class="pagination_list"><a href="#" class="pagination_link_end">20</a></div>
-                <div id="right_pagination"  onclick="change_color_plus();" class="pagination_nav_arrow pagination_arrow_active"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-            </div>
+                <div id="right_pagination" onclick="change_color_plus();" class="pagination_nav_arrow pagination_arrow_active"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+            </div> 
+                <div class="button_view_all">View All</div>
+            </div>     
         </div>
     </section>
     <section class="feature_box center">
@@ -434,9 +514,8 @@
             </div>
         </div>
     </section>
-    <section class="bottom_block">
-        <div class="gray-background"></div>
-        <div class="bottom_block_content center">
+    <section class="bottom_block center">
+        <div class="bottom_block_content">
             <article class="reviews_block">
                 <img src="img/avatar.png" alt="avatar" class="avatar_review">
                 <div class="review_content">
@@ -446,13 +525,14 @@
                     <div class="review_slider">
                         <div class="line_review_slider"></div>
                         <div class="line_review_slider  active_line_review"></div>
-                    </div>
+                        <div class="line_review_slider"></div>
+                    </div> 
                 </div>
             </article>
             <form class="subscribe_block">
                 <p class="subscribe_title">Subscribe</p>
                 <div class="subscribe_text">FOR OUR NEWLETTER AND PROMOTION</div>
-                <input class="input_email" placeholder="Enter Your Email" type="text" required><input type="submit" class="subscribe_button" value="Subscribe" >
+                <input class="input_email" placeholder="Enter Your Email" type="email" required><input type="submit" class="subscribe_button" value="Subscribe" >
             </form>
         </div>
     </section>
